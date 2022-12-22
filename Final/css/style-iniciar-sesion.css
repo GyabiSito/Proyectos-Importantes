@@ -1,0 +1,90 @@
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: #4a91c3;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e6e6e6;
+}
+
+header .frase {
+    z-index: 1;
+    display: flex;
+    height: 50px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.frase h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--blanco);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.iniciar {
+    background-color: var(--gris-claro);
+}
+
+.cont-formu {
+    background-color: var(--blanco);
+    padding: 60px;
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.info {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin: 10px;
+}
+
+.datos {
+    width: 250px;
+    height: 30px;
+}
+
+.boton {
+    padding: 10px 50px;
+    background: var(--color-cuatro);
+    color: var(--blanco);
+    border: 1px solid var(--color-tres);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background: var(--color-uno);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+}
+
+.text-formu {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media (max-width:1000px) {
+    /*FORMULARIO*/
+
+    .info {
+        font-size: 16px;
+        font-family: "Nunito", sans-serif;
+        margin: 10px;
+    }
+    .datos {
+        width: 200px;
+        height: 30px;
+        margin-left: -10px;
+    }
+
+}

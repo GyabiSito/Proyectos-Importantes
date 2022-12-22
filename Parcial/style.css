@@ -1,0 +1,777 @@
+*{
+    margin:0;
+    padding:0;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    user-select: none;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+.eras{
+    width: calc(100vw / 3);
+    height: calc(100vh / 2);
+    float: left;
+}
+
+.eras img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eras div{
+    width: 10vw;
+    height: 20vh;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: rgb(41, 41, 41) solid 0.2vw;
+    position: absolute;
+    margin-top: calc(((100vh / 2) / 2) - (20vh / 2));
+    margin-left: calc(((100vw / 3) / 2) - (10vw / 2));
+    cursor: pointer;
+}
+
+.eras div p{
+    color: white;
+    text-align: center;
+    margin-top: 7vh;
+    font-size: xx-large;
+}
+
+.eras div h1{
+    color: white;
+    font-size: medium;
+    text-align: center;
+    opacity: 0;
+    margin-top: 2vh;
+}
+
+.eras h2{
+    color: white;
+    position: absolute;
+    top: 8vh;
+    left: -50vw;
+    font-size: 4vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0.4vw solid white;
+    padding: 0.4vw 0.8vh;
+}
+#Me2-6{
+    left: -55vw;
+}
+.eras h3{
+    color: white;
+    position: absolute;
+    top: 30vh;
+    right: -55vw;
+    font-size: larger;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0.4vw solid white;
+    padding: 0.4vw 0.8vh;
+}
+
+.eras b{
+    color: cyan; 
+    cursor: pointer;
+}
+
+.eras div:hover{
+    width: 11vw;
+    height: 22vh;
+    border: rgb(255, 255, 255) solid 0.2vw;
+    position: absolute;
+    margin-top: calc(((100vh / 2) / 2) - (22vh / 2));
+    margin-left: calc(((100vw / 3) / 2) - (11vw / 2));
+}
+
+.eras div:hover p{
+    opacity: 0;
+    margin-top: 0.5vh;
+}
+
+.eras div:hover h1{
+    opacity: 1;
+    margin-top: 1.5vh;
+}
+
+#Anu{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+
+#Padomay{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+
+#Aurbis{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Etadaimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+
+#Anuicosimg{
+    position: absolute;
+    top: 150vh;
+    width: 55vw;
+    height: 65vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Kinalethimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 60vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Magnusimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 60vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Mundusimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 40vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Histimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 40vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Aldmerimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 40vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Variacionesimg{
+    position: absolute;
+    top: 150vh;
+    width: 45vw;
+    height: 40vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Hombrebestiaimg{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 90vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Direniimg{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 90vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Rojaimg{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 90vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Nirnimg{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 50vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Tamrielimg{
+    position: absolute;
+    top: 150vh;
+    width: 50vw;
+    height: 50vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#raza1{
+    position: absolute;
+    top: 150vh;
+    width: 25vw;
+    height: 50vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#raza2{
+    position: absolute;
+    top: 150vh;
+    width: 25vw;
+    height: 50vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}#raza3{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Direniimg2{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Ayleidimg1{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Ayleidimg2{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Chimmer{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Ysgramor{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Humanosimg{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+
+#Ahzidalimg{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Elfosnieveimg{
+    position: absolute;
+    top: 150vh;
+    width: 20vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Nochelagrimasimg{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;
+}
+#Alduin{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#corazonimg{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#descargablancaimg{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 80vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#santaimg{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 80vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#morosimg{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 80vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#unionclanes{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 80vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#continenteyokuda{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 80vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#alessyaorden{
+    position: absolute;
+    top: 150vh;
+    width: 30vw;
+    height: 80vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+
+
+#nordicosimg{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#alessyaimg{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#rojapelea{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#bretones{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#plaga{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw; 
+}
+#siaechi{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    height: 70vh;
+    left: calc(50vw - 22.5vw);
+    border: rgb(255, 255, 255) solid 0.2vw;  
+}
+#thover:hover{
+    opacity: 0;
+}
+
+#Siguiente{
+    position:absolute;
+    top:25vh;
+    left: 65vw;
+    width: 100px;
+    height: 100px;
+}
+
+#I2-1{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#I2-2{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#I3-1{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#M1-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#M2-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#M3-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#M4-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#L1-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#L2-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#L3-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#L4-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Nirn-h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-1h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-2h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-3h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-4h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-5h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-6h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-7h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me2-8h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-1h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-2h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-3h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-4h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-5h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-6h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-7h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#Me3-8h3{
+    margin-left: 100vw;
+    width: 50vw;
+}
+#IV h2{
+    top: 400vh;
+    left: 17.5vw;
+    font-size: x-large;
+}
+#IV h3{
+    top: -200vh;
+    left: 40vw;
+    width: 16.5vw;
+    font-size: xx-large;
+    text-align: center;
+}
+#e3-2{
+    top: 40vh;
+    left: -100.7vw;
+    width: 6vw;
+    height: 32.6vh;
+    margin: 0;
+    border: white 0.4vw solid;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 6;
+}
+#e3-8{
+    width: auto;
+    height: 50vh;
+    position: absolute;
+    top: 300vh;
+    left: 24vw;
+    border: white 0.4vw solid;
+    object-fit: contain;
+}
+#e3-10{
+    width: auto;
+    height: 50vh;
+    position: absolute;
+    top: 300vh;
+    left: 35vw;
+    border: white 0.4vw solid;
+    object-fit: contain;
+}
+#e3-14{
+    width: auto;
+    height: 50vh;
+    position: absolute;
+    top: 300vh;
+    left: 34.5vw;
+    border: white 0.4vw solid;
+    object-fit: contain;
+}
+#e3-18{
+    width: auto;
+    height: 50vh;
+    position: absolute;
+    top: 300vh;
+    left: 39.1vw;
+    border: white 0.4vw solid;
+    object-fit: contain;
+}
+#V h2{
+    top: 400vh;
+    left: 17.5vw;
+    font-size: x-large;
+}
+#V h3{
+    top: -200vh;
+    left: 40vw;
+    width: 16.5vw;
+    font-size: xx-large;
+    text-align: center;
+}
+#e2-1{
+    top: 35vh;
+    left: -100.7vw;
+    width: 6vw;
+    height: 37vh;
+    margin: 0;
+    border: white 0.4vw solid;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 7;
+}
+#e2-6{
+    top: 400vh;
+    position: absolute;
+    left: 25vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e2-9{
+    top: 400vh;
+    position: absolute;
+    left: 32.5vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e2-11{
+    top: 400vh;
+    position: absolute;
+    left: 38.75vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e2-14{
+    top: 400vh;
+    position: absolute;
+    left: 33.5vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e2-18{
+    top: 400vh;
+    position: absolute;
+    left: 25.5vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e2-21{
+    top: 400vh;
+    position: absolute;
+    left: 30.5vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#VI h2{
+    top: 400vh;
+    left: 17.5vw;
+    font-size: x-large;
+}
+#VI h3{
+    top: -200vh;
+    left: 40vw;
+    width: 16.5vw;
+    font-size: xx-large;
+    text-align: center;
+}
+#divVI{
+    transition-duration: 1s;
+}
+#e4-1{
+    top: 30vh;
+    left: -100.7vw;
+    width: 6vw;
+    height: 45.9vh;
+    margin: 0;
+    border: white 0.4vw solid;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 8.75;
+}
+#e4-6{
+    top: 400vh;
+    position: absolute;
+    left: 30vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e4-10{
+    top: 400vh;
+    position: absolute;
+    left: 34.75vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e4-12{
+    top: 400vh;
+    position: absolute;
+    left: 38.5vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#e4-16{
+    top: 400vh;
+    position: absolute;
+    left: 36vw;
+    border: white 0.4vw solid;
+    width: auto;
+    height: 50vh;
+}
+#I div:hover{
+    background-color: rgb(27, 6, 3, 0.6);
+}
+
+#II div:hover{
+    background-color: rgb(50, 22, 9, 0.6);
+}
+
+#IV div:hover{
+    background-color: rgba(24, 45, 43, 0.6);
+}
+
+#V div:hover{
+    background-color: rgba(78, 42, 15, 0.6);
+}
+
+#VI div:hover{
+    background-color: rgba(78, 15, 15, 0.6);
+}

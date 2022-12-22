@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,300;1,400;1,600;1,700&display=swap');
+/*font-family: 'Vollkorn', serif; */
+
+body, html{
+    margin:0;
+    padding:0;
+
+}
+.Contenedor p{
+    bottom:200px;
+    margin-left: 30%;
+    font-size: 40px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    color:white;
+    position: absolute;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+}
+nav h1{
+  color:#ffffff;
+  font-family: 'Vollkorn', serif;
+  position:absolute;
+  margin-left: 40%;
+  background: -webkit-linear-gradient(#ffffff, #0e2708);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* autoajustar imagen al centro */
+.Fondo img{
+  width: 90%;
+  margin-left: 5%;
+  height: auto;
+}
+@supports(object-fit: cover){
+    .Fondo img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.wave{
+  margin-top:-20vh;
+  position: absolute;
+  display:flex;
+  height: auto;
+  margin-left: 5%;
+  width: 90%;
+}
+@supports(object-fit: cover){
+  .wave{
+    height: 25vh;
+    object-fit: cover;
+    object-position: center center;
+    max-height: 50vh;
+  }
+}
+
+
+#Grad{
+    display:flex;
+    height: auto;
+    width: 100%;
+}
+@supports(object-fit: cover){
+    #Grad{
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+#Grad{
+    height: 60vw;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    background: rgb(0,0,32);
+    background: linear-gradient(0deg, rgba(0,0,32,0.9) 5%, rgba(255,255,255,0) 100%);
+}
+
+.Fondo{
+    width: 100%;
+    height: 500vh;
+    background-color: #000020;
+    z-index: -1;
+    position: absolute;
+}
+
+
+
+.Contenedor{
+    display:grid;
+    width: 80%;
+    margin-left: 20%;
+    height: 0px;
+    position: absolute;
+    margin-top:20px;
+    color:#ffffff;
+    
+}
+
+fieldset{
+    position:absolute;
+    margin-top:100vh;
+    width: inherit;
+    grid-area: 1 / 1;
+    border: solid 1px transparent;
+    border-top-color: var(--accent);
+    padding:20px;
+    box-sizing: border-box;
+}
+#centro{
+  display: flex;
+  justify-content: center;
+  padding-right: 20vw;
+}
+fieldset:nth-of-type(2){
+    margin-top:140vh;
+}
+fieldset:nth-of-type(3){
+    margin-top:245vh;
+}
+fieldset:nth-of-type(4){
+  margin-top:355vh;
+}
+legend{
+    padding: 0px 6px;
+    margin:auto;
+    font-family: 'Vollkorn', serif;
+    font-size: 100px;
+}
+
+#Texto{
+    width: 60%;
+    height: 30vh;
+    margin-top:120vh;
+    margin-left: 22vw;
+    position:absolute;
+}
+#Texto p{
+    color:#ffffff;
+    font-family: 'Vollkorn', serif;
+    font-weight: 300;
+}
+.centro{
+  display: flex;
+  justify-content: center;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position:absolute;
+    margin-top:165vh;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*CSS para la navegacion manual del slider*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
+  #radio6:checked ~ .first{
+    margin-left: -100%;
+  }
+  #radio7:checked ~ .first{
+    margin-left: -120%;
+  }
+  #radio8:checked ~ .first{
+    margin-left: -140%;
+  }
+  #radio9:checked ~ .first{
+    margin-left: -160%;
+  }
+  #radio10:checked ~ .first{
+    margin-left: -180%;
+  }
+  #radio11:checked ~ .first{
+    margin-left: -200%;
+  }
+  #radio12:checked ~ .first{
+    margin-left: -220%;
+  }
+  #radio13:checked ~ .first{
+    margin-left: -240%;
+  }
+  #radio14:checked ~ .first{
+    margin-left: -260%;
+  }
+  #radio15:checked ~ .first{
+    margin-left: -280%;
+  }
+  
+  /*CSS para la navegacion automática del slider*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #40D3DC;
+  }
+  #radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #40D3DC;
+  }
+  #radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #40D3DC;
+  }
+  #radio8:checked ~ .navigation-auto .auto-btn8{
+    background: #40D3DC;
+  }
+  #radio9:checked ~ .navigation-auto .auto-btn9{
+    background: #40D3DC;
+  }
+  #radio10:checked ~ .navigation-auto .auto-btn10{
+    background: #40D3DC;
+  }
+  #radio11:checked ~ .navigation-auto .auto-btn11{
+    background: #40D3DC;
+  }
+  #radio12:checked ~ .navigation-auto .auto-btn12{
+    background: #40D3DC;
+  }
+  #radio13:checked ~ .navigation-auto .auto-btn13{
+    background: #40D3DC;
+  }
+  #radio14:checked ~ .navigation-auto .auto-btn14{
+    background: #40D3DC;
+  }
+  #radio15:checked ~ .navigation-auto .auto-btn15{
+    background: #40D3DC;
+  }
+  .slides p{
+    display: contents;
+    font-family: 'Vollkorn', serif;
+    color:#ffffff;
+  }
+  
+  .container{
+    top:280vh;
+    width: 40%;
+    height: 60vh;
+    left: 30%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container ul{
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.container ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.container ul li video{
+    width: 200px;
+    transition: all 0.3s;
+}
+.container ul li video:hover{
+    transform: scale(1.1);
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+ul p{
+  display:contents;
+  color:white;
+  font-family: 'Vollkorn', serif;
+}
+
+
+
+
+.field-group{
+    margin-top:390vh;
+    margin-left: 20vw;
+    width: 600px;
+    position: absolute;
+    padding-top: 15px;
+}
+.input-field{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #999999;
+    padding: 10px 0;
+    background: transparent;
+    font-size: 2em;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+.input-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+    color: #999999;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.input-field::placeholder{
+    color: transparent;
+}
+.input-field:placeholder-shown ~ .input-label{
+    font-size: 2em;
+    top: 20px;
+}
+.input-field:focus{
+    border-image: linear-gradient(to right, #ef5a03, #d1d357);
+    border-image-slice: 1;
+}
+.input-field:focus ~ .input-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+    color: #ef5a03;
+}
+
+
+.Ape-group{
+  margin-top:410vh;
+  margin-left: 20vw;
+  width: 600px;
+  position: absolute;
+  padding-top: 15px;
+}
+.Ape-field{
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #999999;
+  padding: 10px 0;
+  background: transparent;
+  font-size: 2em;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.Ape-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #999999;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.Ape-field::placeholder{
+  color: transparent;
+}
+.Ape-field:placeholder-shown ~ .Ape-label{
+  font-size: 2em;
+  top: 20px;
+}
+.Ape-field:focus{
+  border-image: linear-gradient(to right, #ef5a03, #d1d357);
+  border-image-slice: 1;
+}
+.Ape-field:focus ~ .Ape-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #ef5a03;
+}
+
+
+
+
+
+.Mail-group{
+  margin-top:430vh;
+  margin-left: 20vw;
+  width: 600px;
+  position: absolute;
+  padding-top: 1px;
+}
+.Email-field{
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #999999;
+  padding: 10px 0;
+  background: transparent;
+  font-size: 2em;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.Email-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #999999;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.Email-field::placeholder{
+  color: transparent;
+}
+.Email-field:placeholder-shown ~ .Email-label{
+  font-size: 2em;
+  top: 20px;
+}
+.Email-field:focus{
+  border-image: linear-gradient(to right, #ef5a03, #d1d357);
+  border-image-slice: 1;
+}
+.Email-field:focus ~ .Email-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #ef5a03;
+}
+
+
+
+
+.Tel-group{
+  margin-top:450vh;
+  margin-left: 20vw;
+  width: 600px;
+  position: absolute;
+  padding-top: 1px;
+}
+.Number-field{
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #999999;
+  padding: 10px 0;
+  background: transparent;
+  font-size: 2em;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.Number-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #999999;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.Number-field::placeholder{
+  color: transparent;
+}
+.Number-field:placeholder-shown ~ .Number-label{
+  font-size: 2em;
+  top: 20px;
+}
+.Number-field:focus{
+  border-image: linear-gradient(to right, #ef5a03, #d1d357);
+  border-image-slice: 1;
+}
+.Number-field:focus ~ .Number-label{
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #ef5a03;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_responsive.css">
+  <title>Elder Scrolls</title>
+  <link rel="icon" href="imagenes2/Logo.png">
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+  <script src="main2.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="menu">
+      <a href="eras.html"><h1>¡Ver la Cronología!</h1></a>
+      <a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online" target="_blank">
+        <img src="imagenes2/logo.png" width="5%" height="100%">
+    </a>  
+      </nav>
+  </header>
+  <main>
+    <div class="Fondo">
+      <div id="Akali">
+        <div id="Grad"></div>
+        <img src="imagenes2/fondo1.jpg">
+        <div class="wave"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 
+                        L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000020;"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Contenedor">
+      <fieldset>
+        <div id="centro">
+        </div>
+        <legend>Elder Scrolls</legend>
+      </fieldset>
+      <fieldset>
+        <legend>Juegos</legend>
+      </fieldset>
+      <fieldset>
+        <legend>Opinar Sobre: The Elder Scrolls</legend>
+      </fieldset>
+    </div>
+
+    <div id="Texto">
+      <p>The Elder Scrolls es una serie de videojuegos de rol característica por su gran libertad en el planteamiento y
+        gran extensión territorial. En esta serie el jugador participa en una historia épica en el continente de Tamriel
+        tomando parte fundamental en los acontecimientos, normalmente de carácter apocalíptico, de cada era. Cada
+        episodio simboliza un Elder Scroll, es decir, una especie de pergamino de extensión desconocida donde quedan
+        escritas las hazañas del jugador. Estos existen desde el primer Imperio creado. La tradición de este juego dicta
+        que el héroe al cual da vida el jugador empiece como un simple prisionero, resultando liberado de una u otra
+        forma en los primeros compases del juego y recibe, a partir de ahí, total libertad para seguir la historia
+        principal o explorar el mundo y realizar multitud de misiones y tareas secundarias. Esta libertad de acción para
+        el jugador ha dado un gran renombre a esta serie.
+        Los videojuegos de la serie The Elder Scrolls se subtitulan normalmente según el lugar en el que se desarrollan,
+        por ejemplo The Elder Scrolls III: Morrowind.
+        La saga The Elder Scrolls no había contado con traducción de voces al español hasta The Elder Scrolls V: Skyrim.
+      </p>
+    </div>
+
+    <div class="container">
+      <video src="Videos/arena.mp4" class="slidervid" autoplay loop muted controls></video>
+      <ul>
+        <li onclick="videoslider('Videos/arena.mp4')" id="Uno" class="Habilidades">
+          <p>TES:Arena</p><video src="Videos/arena.mp4"></video>
+        </li>
+        <li onclick="videoslider('Videos/Daggerfall.webm')" id="Dos" class="Habilidades">
+          <p>TES:Daggerfall</p><video src="Videos/daggerfall.webm"></video>
+        </li>
+        <li onclick="videoslider('Videos/Morrowind.mp4')" id="Tres" class="Habilidades">
+          <p>TES:Morrowind</p><video src="Videos/morrowind.mp4"></video>
+        </li>
+        <li onclick="videoslider('Videos/oblivion.mp4')" id="Cuatro" class="Habilidades">
+          <p>TES:Oblivion</p><video src="Videos/oblivion.mp4"></video>
+        </li>
+        <li onclick="videoslider('Videos/oblivion.mp4')" id="Cinco" class="Habilidades">
+          <p>R</p><video src="Videos/oblivion.mp4"></video>
+        </li>
+      </ul>
+    </div>
+    <form action="" id="formulario">
+      <div class="field-group">
+        <input type="text" name="name" id="name" class="input-field" placeholder="Nombre" autocomplete="off">
+        <label for="name" class="input-label">Nombre</label>
+      </div>
+      <div class="Ape-group">
+        <input type="text" name="ap" id="ap" class="Ape-field" placeholder="Apellido" autocomplete="off">
+        <label for="ap" class="Ape-label">Apellido</label>
+      </div>
+      <div class="Mail-group">
+        <input type="text" name="email" id="email" class="Email-field" placeholder="Email" autocomplete="off">
+        <label for="email" class="Email-label">Email</label>
+      </div>
+      <div class="Tel-group">
+        <input type="text" name="desc" id="desc" class="desc-field" placeholder="Descripcion" autocomplete="off">
+        <label for="desc" class="desc-label">Descripcion</label>
+      </div>
+      <div class="sub-group">
+        <input type="submit" name="submit" id="submit" class="submit-field" value="¡Opinar!" onclick="submitData()">
+      </div>
+    </form>
+
+
+    <script>
+      function videoslider(links) {
+        document.querySelector(".slidervid").src = links;
+      }
+    </script>
+
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: #acd9fa;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e4dede;
+    --verde1:#88E66B;
+    --verde2:#0EE66B;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: var(--color-cuatro);
+}
+
+td, tr{
+    text-align: center;
+}
+
+.read {
+    background-color: var(--gris-claro);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--negro);
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+
+.read table {
+    width: 100%;
+    padding-top: 30px;
+    border-collapse: collapse;
+}
+
+.read table thead {
+    background-color: var(--color-uno);
+    border-bottom: 1px solid var(--gris);
+}
+
+.read table thead td {
+    padding: 5px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 14px;
+}
+
+.read table tbody tr {
+    transition: all 0.5s;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.read table tbody tr:nth-child(even) {
+    background-color: var(--color-cinco);
+}
+
+.read table tbody tr:hover {
+    background-color: var(--color-uno);
+}
+
+.read table tbody tr:hover td {
+    color: var(--blanco);
+}
+
+.read table tbody tr td {
+    padding: 20px;
+}

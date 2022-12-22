@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+input,
+textarea {
+    font-family: "Nunito", sans-serif;
+}
+
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: #acd9fa;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e6e6e6;
+}
+
+
+/*FORMULARIO*/
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: var(--color-cuatro);
+}
+
+.text-titulo {
+    text-align: center;
+}
+
+.text-formu {
+    display: block;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+.formu-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.formulario{
+    background-color: var(--gris-claro);
+    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 var(--gris);
+}
+.formu-boolean{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-bolean{
+    margin: 20px;
+    width: 25%;
+    height: 50px;
+    font-size: 16px;
+}
+.otro{
+    margin-top: 15px;
+}
+.campos {
+    width: 70%;
+    height: 35px;
+    border-radius: 10px;
+    border: 0.5px solid var(--color-cuatro);
+}
+
+.cont-formu {
+    margin: 20px;
+    width: 40%;
+    height: 60px;
+    font-size: 16px;
+}
+.descri{
+    margin-bottom: 250px;
+}
+.dato2 {
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    border: 0.5px solid var(--color-cuatro);
+}
+
+input[type=radio] {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 6px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+}
+
+input[type=radio]:checked {
+    border: 6px solid var(--color-cuatro);
+}
+
+.multimedia {
+    background-color: var(--color-cinco);
+}
+
+.cont-multi {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.multimedia-info {
+    background-color: var(--blanco);
+    padding: 200px 200px;
+    margin-top: 5%;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 var(--gris);
+}
+
+.ubica-info {
+    background-color: var(--gris-claro);
+    padding: 60px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px 0 var(--gris);
+}
+
+.cont-ubica {
+    margin: 20px;
+    width: 40%;
+    height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+#ubica {
+    width: 100%;
+    height: 90vh;
+    margin-top: 1vh;
+    box-shadow: 0 0 10px 0 var(--gris);
+}
+
+.boton {
+    padding: 10px 50px;
+    background: var(--color-cinco);
+    color: var(--negro);
+    border: 1px solid var(--color-tres);
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-bottom: 40px;
+    font-weight: 800;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background: var(--color-uno);
+    color: var(--gris);
+    border: 1px solid var(--negro);
+}

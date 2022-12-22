@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <input type="radio" name="radio-btn" id="radio9">
+        <input type="radio" name="radio-btn" id="radio10">
+        <input type="radio" name="radio-btn" id="radio11">
+        <input type="radio" name="radio-btn" id="radio12">
+        <input type="radio" name="radio-btn" id="radio13">
+        <input type="radio" name="radio-btn" id="radio14">
+        <input type="radio" name="radio-btn" id="radio15">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first"><p>Akali</p>
+          <img src="Akali_0.jpg" alt="">
+        </div>
+        <div class="slide"><p>Akali Aguijón</p>
+          <img src="Akali_1.jpg" alt="">
+        </div>
+        <div class="slide"><p>Akali Infernal</p>
+          <img src="Akali_2.jpg" alt="">
+        </div>
+        <div class="slide"><p>Akali Supercampeona</p>
+          <img src="Akali_3.jpg" alt="">
+        </div>
+        <div class="slide"><p>Akali Enfermera</p>
+          <img src="Akali_4.jpg" alt="">
+        </div>
+        <div class="slide"><p>Akali Luna de Sangre</p>
+          <img src="Akali_5.jpg" alt="">
+        </div>
+        <div class="slide"><p>Akali Colmillo de Plata</p>
+          <img src="Akali_6.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali Cazadora de Cabezas</p>
+          <img src="Akali_7.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali Sashimi</p>
+          <img src="Akali_8.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali K/DA</p>
+          <img src="Akali_9.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali K/DA Prestigiosa</p>
+          <img src="Akali_10.webp" alt="">
+        </div>
+        <div class="slide"><p>PROYECTO: Akali</p>
+          <img src="Akali_11.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali True Damage</p>
+          <img src="Akali_12.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali K/DA ALL OUT</p>
+          <img src="Akali_13.webp" alt="">
+        </div>
+        <div class="slide"><p>Akali Pesadilla en la Cuidad del Crimen</p>
+          <img src="Akali_14.webp" alt="">
+        </div>
+  
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+          <div class="auto-btn7"></div>
+          <div class="auto-btn8"></div>
+          <div class="auto-btn9"></div>
+          <div class="auto-btn10"></div>
+          <div class="auto-btn11"></div>
+          <div class="auto-btn12"></div>
+          <div class="auto-btn13"></div>
+          <div class="auto-btn14"></div>
+          <div class="auto-btn15"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+        <label for="radio9" class="manual-btn"></label>
+        <label for="radio10" class="manual-btn"></label>
+        <label for="radio11" class="manual-btn"></label>
+        <label for="radio12" class="manual-btn"></label>
+        <label for="radio13" class="manual-btn"></label>
+        <label for="radio14" class="manual-btn"></label>
+        <label for="radio15" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 15){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+  </body>
+</html>

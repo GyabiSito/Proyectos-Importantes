@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <video src="P.webm" class="slider" autoplay loop muted controls></video>
+
+        <ul>
+            <li onclick="videoslider('Videos/P.webm')"><video src="Videos/P.webm"></video></li>
+            <li onclick="videoslider('Videos/Q.webm')"><video src="Videos/Q.webm"></video></li>
+            <li onclick="videoslider('Videos/W.webm')"><video src="Videos/W.webm"></video></li>
+            <li onclick="videoslider('Videos/E.webm')"><video src="Videos/E.webm"></video></li>
+            <li onclick="videoslider('Videos/R.webm')"><video src="Videos/R.webm"></video></li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+</body>
+</html>

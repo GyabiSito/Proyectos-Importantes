@@ -1,0 +1,41 @@
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: hwb(204 8% 78%);
+    --color-cuatro: #0b5285;
+    --color-cinco: #acd9fa;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e6e6e6;
+}
+
+.boton {
+    width: 60%;
+    padding: 4%;
+    margin: 2%;
+    border-radius: 20px;
+    border:solid 2px var(--color-cuatro) ;
+    background-color: var(--color-uno);
+    color: var(--blanco);
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0s;
+    transition: all 0.3s;
+}
+
+.boton:hover{
+    border:solid 2px var(--blanco) ;
+    background-color: var(--color-cinco);
+}
+.cont-formu {
+    background-color: var(--gris-claro);
+    padding: 60px;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius:20px;
+    box-shadow: 5px 10px var(--color-uno);
+}

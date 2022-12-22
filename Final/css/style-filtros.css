@@ -1,0 +1,62 @@
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: #4a91c3;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e6e6e6;
+}
+
+
+/*FILTROS*/
+.frase {
+    font-size: 30px;
+    color: var(--color-cuatro);
+    margin-left: 20%;
+    margin: auto;
+}
+
+#generalbuscador {
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+}
+
+
+.cont-formu {
+    background-color: var(--blanco);
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.text {
+    font-size: 18px;
+    margin: 10px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:900px) {
+
+    .filtrobuscar {
+        width: 90%;
+        margin: 10px 20px;
+    }
+    .otro {
+        width: 88%;
+    }
+    .text {
+        display: block;
+    }
+    #generalbuscador {
+        width: 90%;
+        height: 60vh;
+    }
+    .filtros {
+        padding-top: 50px;
+    }
+}

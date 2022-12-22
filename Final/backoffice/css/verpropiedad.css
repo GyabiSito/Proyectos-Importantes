@@ -1,0 +1,142 @@
+:root {
+    --color-uno: #1293ef;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: #acd9fa;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e4dede;
+    --verde1: #99e882;
+    --verde2: #48a26f;
+    --rojo1: #d16060;
+    --rojo2:#a33131;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: var(--color-cuatro);
+}
+
+td {
+    text-align: center;
+}
+
+.read {
+    background-color: var(--gris-claro);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--negro);
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+
+.read table {
+    width: 100%;
+    padding-top: 30px;
+    border-collapse: collapse;
+}
+
+.read table thead {
+    background-color: var(--color-uno);
+    border-bottom: 1px solid var(--gris);
+}
+
+.read table thead td {
+    padding: 5px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 14px;
+}
+
+.read table tbody tr {
+    transition: all 0.5s;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.read table tbody tr:nth-child(even) {
+    background-color: var(--color-cinco);
+}
+
+.read table tbody tr:hover {
+    background-color: var(--color-uno);
+}
+
+.read table tbody tr:hover td {
+    color: var(--blanco);
+}
+
+.read table tbody tr td {
+    padding: 10px;
+}
+
+.read table tbody tr td.actions {
+    padding: 8px;
+    text-align: right;
+}
+
+.read table tbody tr td.actions .edit,
+.read table tbody tr td.actions .trash,
+.read table tbody tr td.actions .mostrar  {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    border: 2px solid var(--blanco);
+}
+
+
+
+.read table tbody tr td.actions .trash {
+    background-color: var(--rojo1);
+}
+.read table tbody tr td.actions .trash:hover {
+    background-color: var(--rojo2);
+}
+.read table tbody tr td.actions .mostrar {
+    background-color: var(--verde1);
+}
+.read table tbody tr td.actions .mostrar:hover {
+    background-color: var(--verde2);
+}
+.read table tbody tr td.actions .edit {
+    background-color: var(--color-uno);
+}
+
+.read table tbody tr td.actions .edit:hover {
+    background-color: var(--color-cuatro);
+}
+
+.boton {
+    padding: 10px 50px;
+    background: var(--color-cinco);
+    color: var(--blanco);
+    border: 1px solid var(--color-tres);
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 var(--color-dos);
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: var(--color-cuatro);
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+    border-radius: 20px;
+}
+
+input[type=search] {
+    width: 450px;
+    height: 40px;
+    border-radius: 20px;
+}

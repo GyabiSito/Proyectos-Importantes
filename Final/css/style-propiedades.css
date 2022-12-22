@@ -1,0 +1,19 @@
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: #4a91c3;
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e6e6e6;
+}
+
+/*FILTROS*/
+.frase{
+    font-size: 30px;
+    color: var(--color-cuatro);
+    margin-left: 20%;
+}
+

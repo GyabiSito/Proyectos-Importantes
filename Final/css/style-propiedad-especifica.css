@@ -1,0 +1,272 @@
+:root {
+    --color-uno: #0f71b8;
+    --color-dos: #042338;
+    --color-tres: #152a38;
+    --color-cuatro: #0b5285;
+    --color-cinco: rgb(74, 145, 195);
+    --blanco: #Fff;
+    --negro: #040404;
+    --gris: #414141;
+    --gris-claro: #e6e6e6;
+}
+.contenedor-encabezado{
+    background-color: var(--gris-claro);
+}
+
+.titulo {
+    color: var(--color-cuatro);
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.img-eti {
+    width: 30px;
+    height: 30px;
+}
+
+.impresion {
+    float: right;
+}
+
+.enca-ubica {
+    margin-top: 10px;
+}
+
+.enca-ubica img {
+    margin-top: 35px;
+}
+
+.text-ubica {
+    margin: 5% 5%;
+}
+
+.img-eti img {
+    width: 100%;
+    height: 100%;
+}
+
+.mostrar {
+    margin-left: 10px;
+    font-weight: 800;
+    padding: 10px 15px;
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+.etiquetas {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+}
+
+.propiedad-video {
+    padding: 30px 20px;
+    width: 70%;
+    height: 400px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.descripcion {
+    background-color: var(--gris-claro);
+}
+
+.detalles {
+    background-color: var(--gris-claro);
+}
+
+.texto-descripcion {
+    padding: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: var(--blanco);
+}
+
+.titulo-barra {
+    border-bottom: 1px solid var(--color-cuatro);
+}
+
+span {
+    font-weight: 800;
+}
+
+.info-toda-ubica {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-ubica {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid var(--gris);
+}
+
+.propiedad-ubica {
+    padding: 30px 20px;
+    width: 70%;
+    height: 400px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.propiedad-ubica iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.text-fecha {
+    display: inline;
+    margin-left: 5%;
+}
+
+.contenedor-detalles {
+    background-color: var(--blanco);
+    padding: 50px;
+}
+
+.detalless {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.detalles-info {
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeria>.galeria-img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.galeria img {
+    background-color: var(--gris-claro);
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria-img:hover img {
+    transform: scale(1.3);
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .5s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box .img-galeria {
+    width: 75vw;
+    max-height: 90vh;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.close img {
+    width: 100%;
+    height: 100%;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:1000px) {
+    .propiedad-video {
+        width: 100%;
+        height: 300px;
+    }
+
+    .ubica {
+        visibility: hidden;
+    }
+
+    .text-ubica {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width:500px) {
+    .propiedad-video {
+        width: 100%;
+        height: 200px;
+    }
+
+    .info-ubica {
+        width: 100%;
+    }
+
+    .propiedad-ubica {
+        width: 100%;
+    }
+
+    .detalles-info {
+        width: 100%;
+        height: 50px;
+    }
+
+    .light-box .img-galeria {
+        width: 100vw;
+    }
+
+    .texto-descripcion {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .texto-descripcion>p {
+        width: 90%;
+    }
+}

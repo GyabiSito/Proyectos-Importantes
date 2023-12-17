@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          José Hernández
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          josecitohernandez5@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +598 098 438 435
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/animation/2022/11/10/13/22/13-22-56-246_512.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm José Hernández!
+          </h1>
+          <p>
+            I'm Jose Hernandez, and I'm thrilled to introduce myself. I have a background in web development, specializing in HTML, CSS, PHP, MySQL, and JavaScript.
+
+            I graduated in Computer Science from UTU, where I led a successful team in creating a Real Estate Agency Website as part of our thesis. We used HTML, CSS, PHP, MySQL, JavaScript, and Linux, earning top marks for our project documentation. It efficiently managed property transactions and rentals.
+            
+            I believe my track record in web development and commitment to learning make me a good fit. My projects, like the real estate website and managing a gaming blog, showcase my technical skills and teamwork. I'm proficient in HTML, CSS, PHP, MySQL, and JavaScript, and I love solving challenges.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS 3</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h6>Node</h6>
+          <p>Coming Soon</p>
+        </div>    
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>Coming Soon</p>
+        </div>  
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Developed a telegram Chatbot using Java</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Developed a Real Estate Website </h3>
+            <ul>
+              <li>Developed Real Estate Website for my Thesis (with my group reached the max note) using PHP, MySql, HTML, CSS, JS, Linux</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Blog</h3>
+            <ul>
+              <li>Created Blogsite using principally PHP </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Airline information</h3>
+            <ul>
+              <li>Created a beautiful page for an airline using only HTML and CSS </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Metallurgical Website</h3>
+            <ul>
+              <li>Created a website for a Metallurgical using only HTML and CSS </li>
+            </ul>
+          </div>
+          <hr>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendation</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Cultivating a professional environment, he's a reliable asset ensuring timely and high-quality deliverables.
+          His commitment to excellence makes collaborations seamless and effective.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          His adept professionalism makes him an invaluable team player, consistently contributing expertise and dedication to shared projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Efficient and focused, he prioritizes tasks effectively, streamlining workflows by bypassing trivialities and maintaining a 
+          steadfast focus on the core objectives
+          He will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
